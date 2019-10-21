@@ -19,4 +19,6 @@ And has 2 output values:
 - Next movement speed
 - Next movement direction
 
+![neural net for movement determination](NeuralNet.png)
+
 Using the calculations from it's neural network a force is applied to the node's physics body with the direction and speed calculated 4 times per second.
