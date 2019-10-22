@@ -3,6 +3,8 @@
 
 A combination of the prerequisites for evolution and some elementary machine learning creating an interesting exemplification of natural selection.
 
+![](gifs/ns_timelapse.gif)
+
 The idea was to create a virtual environment containing very simple entities capable of evolving behaviorally and a little bit physically.
 
 ### How
@@ -19,7 +21,7 @@ And has 2 output values:
 - Next movement speed
 - Next movement direction
 
-![neural net for movement determination](NeuralNet.png)
+![](gifs/NeuralNet.png)
 
 Using the calculations from it's neural network a force is applied to the node's physics body with the direction and speed calculated 4 times per second.
 
@@ -46,3 +48,50 @@ Further furthermore, if any reproduced node is calculated as different enough fr
 Nodes starve if they don't collect resources (the little brown dots). They can also eat or be eaten by other nodes based on size. Nodes that don't move toward resources starve, nodes that get eaten also die. Only species that possess reproduction-encouraging traits live on (e.g. movement toward food, larger size).
 
 ### Below are the results of some of the more interesting simulations
+
+#### Simulation Snapshots
+
+![](gifs/ns_timelapse_2.gif)
+
+5-minutes timelapse of a simulation right after re-configuring from favoring smaller nodes to larger nodes.
+
+![](gifs/ns_capture_1.gif)
+
+What the majority of default configuration simulations look like: 2 dominant species competing for area.
+
+![](gifs/ns_capture_2.gif)
+
+When the simulation is configured to favor smaller, faster moving node upon collision. Took about 10 minutes to reach this point.
+
+![](gifs/ns_capture_3.gif)
+
+A particularly diverse crew with default configurations after about 5 minutes.
+
+![](gifs/ns_capture_4.gif)
+
+The result of running a 20 hour simulation that favors larger nodes.
+
+![](gifs/ns_capture_5.gif)
+
+The same simulation as before but after some amount of speciation among the larger nodes.
+
+#### Individual Node Tracks
+For entertainment purposes.
+
+![](gifs/node_track_1.gif)
+
+![](gifs/node_track_2.gif)
+
+![](gifs/node_track_3.gif)
+
+![](gifs/node_track_4.gif)
+
+![](gifs/node_track_5.gif)
+
+![](gifs/node_track_6.gif)
+
+![](gifs/node_track_7.gif)
+
+#### Code
+If you're interested in code the neural network inplementation is in Node.swift and the nearest neighbor
+algorithm that I'm somewhat proud of is in Quad.swift
