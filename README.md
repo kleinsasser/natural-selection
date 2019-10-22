@@ -5,7 +5,7 @@ A combination of the prerequisites for evolution and some elementary machine lea
 
 ![](gifs/ns_timelapse.gif)
 
-The idea was to create a virtual environment containing very simple entities capable of evolving behaviorally and a little bit physically.
+The idea was to create a virtual environment containing very simple entities capable of evolving physically and more importantly behaviorally.
 
 ### How
 
