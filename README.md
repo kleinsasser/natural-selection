@@ -93,5 +93,5 @@ For entertainment purposes.
 ![](gifs/node_track_7.gif)
 
 #### Code
-If you're interested in code the neural network inplementation is in Node.swift and the nearest neighbor
+If you're interested in code the neural network implementation is in Node.swift and the nearest neighbor
 algorithm that I'm somewhat proud of is in Quad.swift
